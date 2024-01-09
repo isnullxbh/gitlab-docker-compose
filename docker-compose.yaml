@@ -1,7 +1,8 @@
 services:
-  web:
+  gitlab:
+    container_name: gitlab
     image: gitlab/gitlab-ee:latest
-    restart: always
+    restart: unless-stopped
     hostname: ${GITLAB_HOSTNAME}
     environment:
       GITLAB_OMNIBUS_CONFIG: |
