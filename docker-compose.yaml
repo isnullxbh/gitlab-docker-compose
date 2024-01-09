@@ -1,7 +1,7 @@
 services:
   gitlab:
     container_name: gitlab
-    image: gitlab/gitlab-ee:latest
+    image: gitlab/gitlab-ce:latest
     restart: unless-stopped
     hostname: ${GITLAB_HOSTNAME}
     environment:
